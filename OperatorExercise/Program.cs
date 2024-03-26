@@ -21,7 +21,7 @@
             int y = 5;
 
 
-                double quote = x / y;
+            double quote = x / y;
             int remainder = x % y;
 
             //Exercise 1, #3------------------------
@@ -35,8 +35,28 @@
             Console.WriteLine($"The remainder of {x} divided by {y} is {remainder}.");
 
 
-
-            Console.WriteLine("Hello, World!");
+            //Calling Exercise 2 Method----------------
+            
+            //AreaOfCircle();
+            Console.WriteLine(AreaOfCircle());
         }
+
+
+
+        //Exercise 2, #1----------------------------
+
+        public static double AreaOfCircle()
+        {
+            Console.WriteLine("What is the radius of your circle");
+             double radius = double.Parse(Console.ReadLine());
+
+            double areaCircle = (Math.PI * radius * radius);
+            return areaCircle;
+        }
+
+     
+
+           
+      
     }
 }
